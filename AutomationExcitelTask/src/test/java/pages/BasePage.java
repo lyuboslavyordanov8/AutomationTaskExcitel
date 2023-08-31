@@ -3,7 +3,7 @@ package pages;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.PageFactory;
-import utils.Driver;
+import utils.appium.Driver;
 
 public class BasePage {
     static AppiumDriver<?> driver;
@@ -14,7 +14,7 @@ public class BasePage {
     }
 
     public AppiumDriver<?> getDriver() {
-        driver = Driver.getAppiumDriver();
+        driver = Driver.getAppiumDriver( );
         return driver;
     }
 }

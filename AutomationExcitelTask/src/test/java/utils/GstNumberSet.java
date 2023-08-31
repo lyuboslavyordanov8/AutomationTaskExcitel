@@ -2,7 +2,8 @@ package utils;
 
 import pages.BasePage;
 
-public class GstNumberSet extends BasePage {
+public class GstNumberSet extends BasePage
+{
     public static double userGstNumber;
     public static GstNumberSet gstNumberSetInstance = null;
 

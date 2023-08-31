@@ -3,7 +3,7 @@ package pages;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-import org.junit.jupiter.api.Assertions;
+import org.junit.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -98,6 +98,7 @@ public class UserTicketsPage extends BasePage {
     }
 
     private void assertNotEmpty(String value, String errorMessage) {
-        Assertions.assertFalse(value.isEmpty(), errorMessage);
+        Assert.assertFalse( errorMessage,
+                            value.isEmpty( ) );
     }
 }

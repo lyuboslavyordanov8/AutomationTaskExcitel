@@ -2,8 +2,7 @@ package pages;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-import org.junit.jupiter.api.Assertions;
-import utils.GstNumberSet;
+import org.junit.Assert;
 
 import java.util.NoSuchElementException;
 
@@ -41,7 +40,7 @@ public class UserAccountPage extends BasePage {
      */
 
     public UserAccountPage verifyUserAccountImage() {
-        Assertions.assertTrue(userAccountImage.isDisplayed());
+        Assert.assertTrue( userAccountImage.isDisplayed( ) );
         return this;
     }
 
